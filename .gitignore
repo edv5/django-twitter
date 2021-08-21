@@ -1,5 +1,6 @@
 *.box
 .vagrant
+.pycharm_helpers
 Vagrantfile
 
 # Byte-compiled / optimized / DLL files

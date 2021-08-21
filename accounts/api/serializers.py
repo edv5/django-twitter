@@ -3,10 +3,15 @@ from rest_framework import serializers
 from rest_framework import exceptions
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email']
+        fields = ('id', 'username', 'email')
+
+class UserSerializerForTweet(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username')
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
@@ -44,7 +49,6 @@ class SignupSerializer(serializers.ModelSerializer):
         username = validated_data['username'].lower()
         email = validated_data['email'].lower()
         password = validated_data['password']
-
         user = User.objects.create_user(
             username=username,
             email=email,
