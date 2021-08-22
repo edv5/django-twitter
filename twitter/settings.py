@@ -41,10 +41,12 @@ INSTALLED_APPS = [
     # third party
     'rest_framework',
     'debug_toolbar',
-    'tweets',
 
     # project apps
     'accounts',
+    'tweets',
+    'friendships',
+
 ]
 
 REST_FRAMEWORK = {
