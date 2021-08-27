@@ -9,7 +9,7 @@ UNFOLLOW_URL = '/api/friendships/{}/unfollow/'
 
 class FriendshipApiTests(TestCases):
     def setUp(self):
-        self.anonymous_client = APIClient()
+        #self.anonymous_client = APIClient()
 
         self.linghu = self.create_user('linghu')
         self.linghu_client = APIClient()
