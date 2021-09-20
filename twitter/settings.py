@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'tweets',
     'friendships',
     'newsfeeds',
-    'comments',
+    'replies',
 ]
 
 REST_FRAMEWORK = {

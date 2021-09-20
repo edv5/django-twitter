@@ -1,5 +1,7 @@
+
+# Register your models here.
 from django.contrib import admin
-from comments.models import Comment
+from replies.models import Comment
 
 
 @admin.register(Comment)

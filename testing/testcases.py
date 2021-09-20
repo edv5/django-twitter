@@ -2,7 +2,7 @@ from django.test import TestCase as DjangoTestCase
 from django.contrib.auth.models import User
 from tweets.models import Tweet
 from rest_framework.test import APIClient
-from comments.models import Comment
+from replies.models import Comment
 
 class TestCases(DjangoTestCase):
 
